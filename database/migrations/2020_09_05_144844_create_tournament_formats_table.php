@@ -26,7 +26,7 @@ class CreateTournamentFormatsTable extends Migration
             $table->string('handler');
         });
 
-        \App\Models\TournamentFormats::create([
+        \App\Models\TournamentFormat::create([
             'key' => 'round-robin',
             'name' => 'Round Robin',
             'handler' => 'RoundRobinHandlerImpl'
